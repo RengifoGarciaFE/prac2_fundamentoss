@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+    <title> Práctica 2 - Fundamentos de tecnología de videojuegos</title>
+    <head> 
+        <h1> El juego de la vida </h1>
+    </head>
+
+    <body>
+        <button onclick="buttonInit(100)">Jugar</button>
+        <button onclick="buttonInit(1000)">Detener</button>
+
+
+        <script>
+            
+            class Cell{
+                constructor(alive,liveTime){
+                    //alive = true si está viva, alive = false si está muerta
+                    this._alive=alive;
+                    this._liveTime=0.0;
+                    this._arrayPosition=arrayPosition;
+                    this._neighbourCellPositions = [];
+                }
+
+                //getters y setters
+                get alive(){
+                    return this._alive;
+                }
+                get liveTime(){
+                    return this._liveTime;
+                }
+                get arrayPosition(){
+                    return this._arrayPosition;
+                }
+                get neighbourCell(){
+                    return this._neighbourCell;
+                }
+
+
+                set alive(x){
+                    this._alive=x;
+                }
+                set liveTime(x){
+                    this._liveTime=x;
+                }
+                set arrayPosition(x){
+                    this._arrayPosition=x;
+                }
+                set neighbourCellPositions(x){
+                    this._neighbourCellPositions = x;
+                }
+
+
+            }
+
+
+
+            class World{
+                constructor(width,bidimensionalMatrix){
+                    this._width = width;
+                    this._bidimensionalMatrix = [];
+                }
+
+                //getters y setters
+                get width(){
+                    return this._width;
+                }
+                get bidimensionalMatrix(){
+                    return this._bidimensionalMatrix;
+                }
+
+                set width(x){
+                    this._width=x;
+                }
+                set bidimensionalMatrix(x){
+                    this._bidimensionalMatrix=x;
+                }
+
+                boardPainting(width){
+                    
+                }
+
+            }
+
+        </script>
+
+
+
+
+    </body>
